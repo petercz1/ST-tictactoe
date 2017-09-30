@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/javascript.js"></script>
+
+</head>
+
+<body>
+  <h1>Tic Tac Toe</h1>
+
+  <div id="outer">
+    <div id="box1">
+      <div class='row'>
+        <div id="s1" class='row1 col1 diag1'></div>
+        <div id="s2" class='row1 col2'></div>
+        <div id="s3" class='row1 col3 diag2'></div>
+      </div>
+      <div class='row'>
+        <div id="s4" class='row2 col1'></div>
+        <div id="s5" class='row2 col2 diag1 diag2'></div>
+        <div id="s6" class='row2 col3'></div>
+      </div>
+      <div class='row'>
+        <div id="s7" class='row3 col1 diag2'></div>
+        <div id="s8" class='row3 col2'></div>
+        <div id="s9" class='row3 col3 diag1'></div>
+      </div>
+    </div>
+    <div id="box2">
+      <div id="players">
+        <div id="enter_names">
+          <p>enter player names:</p>
+          <input type="text" id='player1' value="">
+          <input type="text" id='player2' value="">
+          <button id='start'>start</button>
+        </div>
+      </div>
+      <div id='controls'>
+        <div id="status">
+          <div id='player1_status'>Bill</div>
+          <div id='player2_status'>Bob - you're next</div>
+        </div>
+        <button id='reset'>reset</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+$div_style: 2px solid green;
+$break-point:700px;
+
+#outer{
+    display: flex;
+}
+
+@media screen and (max-width: $break-point){
+    #outer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: $break-point){
+    #outer{
+        flex-direction: row;
+    }
+}
+
+
+div[id^=s] {
+    width: 100px;
+    height: 100px;
+    border: $div_style;
+    margin: 2px;
+    float: left;
+}
+
+.row{
+    clear: both;
+}
+
+#players{
+    clear: both;
+    border: 1px solid red;
+}
+
+#controls{
+    clear:both;
+    border: 1px solid blue;
+}
+
+.xclicked{
+    background-color: lightBlue;
+}
+
+.oclicked{
+    background-color: pink;
+}
+
